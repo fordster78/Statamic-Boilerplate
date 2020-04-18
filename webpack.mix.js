@@ -1,5 +1,6 @@
 let mix = require('laravel-mix');
-
+require('laravel-mix-purgecss');
+require('laravel-mix-tailwind');
 /*
  |--------------------------------------------------------------------------
  | Mix Asset Management
@@ -12,7 +13,20 @@ let mix = require('laravel-mix');
  */
 
 mix.js('resources/js/site.js', 'public/js')
-   .sass('resources/sass/site.scss', 'public/css');
+   .sass('resources/sass/site.scss', 'public/css')
+    .tailwind('tailwind.config.js');
+
+mix.browserSync({
+    proxy: process.env.APP_URL
+});
+
+if (mix.inProduction()) {
+    mix.purgeCss({
+        defaultExtractor: content => content.match(/[\w-/.:]+(?<!:)/g) || [],
+        folders: ['content', 'resources'],
+        whitelist: ['blockquote'],
+    });
+}
 
 
 /*
