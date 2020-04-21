@@ -1,0 +1,27 @@
+title: SEO
+fields:
+  meta_title:
+    input_type: text
+    type: text
+    localizable: false
+    listable: hidden
+    display: 'Meta Title'
+  meta_description:
+    type: textarea
+    localizable: false
+    listable: hidden
+    display: 'Meta Description'
+  meta_image:
+    mode: grid
+    restrict: true
+    allow_uploads: true
+    max_files: 1
+    type: assets
+    localizable: false
+    listable: hidden
+    display: 'Meta Image'
+  meta_keywords:
+    type: textarea
+    localizable: false
+    listable: hidden
+    display: 'Meta Keywords'
