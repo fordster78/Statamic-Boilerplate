@@ -1,0 +1,53 @@
+title: Social
+fields:
+  social_links:
+    fields:
+      -
+        handle: platform
+        field:
+          options:
+            twitter: Twitter
+            facebook: Facebook
+            instagram: Instagram
+            linkedin: LinkedIn
+          clearable: false
+          multiple: false
+          searchable: true
+          taggable: false
+          push_tags: false
+          cast_booleans: false
+          type: select
+          localizable: false
+          listable: hidden
+          display: Platform
+      -
+        handle: url
+        field:
+          input_type: text
+          type: text
+          localizable: false
+          listable: hidden
+          display: URL
+      -
+        handle: has_handle
+        field:
+          type: toggle
+          localizable: false
+          listable: hidden
+          display: has_handle
+      -
+        handle: handle
+        field:
+          input_type: text
+          type: text
+          localizable: false
+          listable: hidden
+          display: Handle
+          if:
+            has_handle: true
+    mode: table
+    reorderable: false
+    type: grid
+    localizable: false
+    listable: hidden
+    display: 'Social Links'
