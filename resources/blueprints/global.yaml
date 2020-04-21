@@ -1,0 +1,132 @@
+title: Global
+sections:
+  company:
+    display: Company
+    fields:
+      -
+        handle: name
+        field:
+          input_type: text
+          type: text
+          instructions: 'The name of the site. Typically the your name or the name of your business.'
+          localizable: false
+          listable: true
+          display: 'Site Name'
+          width: 50
+      -
+        handle: favicon
+        field:
+          mode: grid
+          container: assets
+          restrict: true
+          allow_uploads: true
+          max_files: 1
+          type: assets
+          localizable: false
+          width: 50
+          listable: hidden
+          display: Favicon
+          folder: favicons
+          instructions: 'This will be used for the tab/bookmark icon. Typically a .ico file but .png and .jpg files will work.'
+      -
+        handle: address
+        field:
+          type: textarea
+          localizable: false
+          listable: true
+          display: Address
+      -
+        handle: telephone_number
+        field:
+          input_type: text
+          type: text
+          localizable: false
+          listable: hidden
+          display: 'Telephone Number'
+          width: 50
+      -
+        handle: mobile_number
+        field:
+          input_type: text
+          type: text
+          localizable: false
+          listable: hidden
+          display: 'Mobile Number'
+          width: 50
+      -
+        handle: email
+        field:
+          input_type: text
+          type: text
+          localizable: false
+          listable: hidden
+          display: 'Email Address'
+          validate: email
+  scripts:
+    display: Scripts
+    fields:
+      -
+        handle: head_scripts
+        field:
+          fields:
+            -
+              handle: description
+              field:
+                input_type: text
+                type: text
+                localizable: false
+                listable: hidden
+                display: Description
+            -
+              handle: code
+              field:
+                type: textarea
+                localizable: false
+                listable: hidden
+                display: Code
+          mode: table
+          add_row: 'Add Code'
+          reorderable: true
+          type: grid
+          instructions: 'Add meta tags and scripts to the <head> area of your site.'
+          localizable: false
+          listable: hidden
+          display: 'Head Scripts'
+      -
+        handle: footer_scripts
+        field:
+          fields:
+            -
+              handle: description
+              field:
+                input_type: text
+                type: text
+                localizable: false
+                listable: hidden
+                display: Description
+            -
+              handle: code
+              field:
+                type: textarea
+                localizable: false
+                listable: hidden
+                display: Code
+          mode: table
+          add_row: 'Add Code'
+          reorderable: true
+          type: grid
+          instructions: 'Add meta tags and scripts right before closing </body> area of your site.'
+          localizable: false
+          listable: hidden
+          display: 'Footer Scripts'
+  social:
+    display: Social
+    fields:
+      -
+        import: social
+  seo:
+    display: SEO
+    fields:
+      -
+        import: seo
+        prefix: global_
