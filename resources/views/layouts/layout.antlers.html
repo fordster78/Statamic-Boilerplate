@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="{{ site_short_locale }}">
+    <head>
+        <meta charset="utf-8">
+
+        <link rel="shortcut icon" href="{{ company:favicon }}">
+        <link rel="apple-touch-icon" href="{{ company:favicon }}">
+        <link rel="icon" href="{{ company:favicon }}">
+
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <title>{{ title }} | {{ company:name }}</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="name" content="{{ company:global_meta_title }}">
+        <meta name="description" content="{{ company:global_meta_description }}" />
+        <meta name="keywords" content="{{ company:global_meta_keywords }}">
+        <meta name="Copyright" content="{{ company:name }}" >
+
+        <link rel="canonical" href="{{ config:app:url }}">
+
+        {{ partial:social }}
+
+    </head>
+    <body>
+        <div class="container">
+            <div class="content">
+                {{ template_content }}
+            </div>
+        </div>
+    </body>
+</html>
