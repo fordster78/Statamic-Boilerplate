@@ -1,0 +1,23 @@
+title: Setting
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: banner_enabled
+        field:
+          type: toggle
+          localizable: false
+          listable: hidden
+          display: 'Enable Banner'
+          width: 50
+      -
+        handle: banner_message
+        field:
+          type: text
+          localizable: false
+          listable: hidden
+          display: 'Banner Message'
+          width: 50
+          if:
+            banner_enabled: true

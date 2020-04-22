@@ -1,0 +1,20 @@
+{{ if settings:banner_enabled }}
+    <div>
+        <div class="bg-gray-300 px-4 py-3 flex items-start lg:justify-center lg:px-8 lg:py-4">
+            <div class="container mx-auto">
+                <div class="flex">
+                    <div class="flex-shrink-0">
+                        <svg class="h-6 w-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <div class="ml-3 flex-1 lg:flex lg:justify-between">
+                        <p class="text-sm leading-6 font-medium text-blue-700">
+                            {{ settings:banner_message }}
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{{ /if }}
