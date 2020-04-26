@@ -1,5 +1,11 @@
 @tailwind base;
 
+[v-cloak] {
+    display: none;
+}
+
+@import "typography.scss";
+
 @tailwind components;
 
 @tailwind utilities;

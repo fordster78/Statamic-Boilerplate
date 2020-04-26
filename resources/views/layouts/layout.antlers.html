@@ -23,9 +23,15 @@
         {{ partial:social }}
 
     </head>
-    <body class="bg-gray-100">
-        {{ partial src="banners/fixed" }}
+    <body class="bg-gray-50 h-screen antialiased leading-none">
+        <div id="site">
+            {{ partial:navigation }}
 
-        {{ template_content }}
+            {{ partial src="banners/fixed" }}
+
+            {{ template_content }}
+        </div>
+
+        <script src="/js/site.js"></script>
     </body>
 </html>

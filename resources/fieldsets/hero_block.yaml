@@ -1,0 +1,29 @@
+title: 'Hero Block'
+fields:
+  heading:
+    input_type: text
+    type: text
+    localizable: false
+    listable: hidden
+    display: Heading
+  text:
+    input_type: text
+    type: textarea
+    localizable: false
+    listable: hidden
+    display: Text
+  image:
+    mode: grid
+    restrict: false
+    allow_uploads: true
+    max_files: 1
+    type: assets
+    localizable: false
+    listable: hidden
+    display: Image
+  image_alt:
+    input_type: text
+    type: text
+    localizable: false
+    listable: hidden
+    display: 'Image Alt'

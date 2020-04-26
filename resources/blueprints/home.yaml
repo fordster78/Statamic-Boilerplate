@@ -1,0 +1,15 @@
+title: Home
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        import: hero_block
+        prefix: hero_
+      -
+        import: page_builder
+  sidebar:
+    display: Sidebar
+    fields:
+      -
+        import: seo

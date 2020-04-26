@@ -21,3 +21,23 @@ sections:
           width: 50
           if:
             banner_enabled: true
+      -
+        handle: show_menu_header
+        field:
+          type: toggle
+          localizable: false
+          listable: hidden
+          display: 'Show Menu Header'
+          width: 50
+      -
+        handle: menu_header
+        field:
+          type: text
+          localizable: false
+          listable: hidden
+          display: 'Menu Header'
+          width: 50
+          input_type: text
+          instructions: 'This will default to the Company Name when blank.'
+          if:
+            show_menu_header: 'equals true'

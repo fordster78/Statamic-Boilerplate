@@ -1,0 +1,35 @@
+h1 {
+    @apply .pb-4 .text-5xl .text-blue-600 .font-extrabold;
+}
+
+h2 {
+    @apply .pb-4 .text-4xl .text-blue-600 .font-bold;
+}
+
+h3 {
+    @apply .pb-4 .text-3xl .text-blue-600;
+}
+
+h4 {
+    @apply .pb-4 .text-2xl .text-blue-600;
+}
+
+h5 {
+    @apply .pb-4 .text-xl .text-blue-600;
+}
+
+h6 {
+    @apply .pb-4 .text-lg .text-blue-600;
+}
+
+p {
+    @apply .text-base .text-center;
+
+    @screen lg {
+        @apply .text-left;
+    }
+}
+
+strong {
+    @apply .text-blue-600;
+}
