@@ -1,5 +1,9 @@
 @tailwind base;
 
+.inherit-color {
+    color: inherit;
+}
+
 [v-cloak] {
     display: none;
 }
@@ -9,3 +13,6 @@
 @tailwind components;
 
 @tailwind utilities;
+
+@import "animate.scss";
+@import "animations.scss";
