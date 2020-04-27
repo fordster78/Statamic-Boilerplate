@@ -1,0 +1,8 @@
+title: 'Page Builder'
+fields:
+  builder:
+    type: replicator
+    localizable: false
+    listable: hidden
+    display: Builder
+    sets:

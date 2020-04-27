@@ -1,0 +1,28 @@
+title: Page
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: title
+        field:
+          input_type: text
+          type: text
+          localizable: false
+          listable: hidden
+          display: Title
+      -
+        import: page_builder
+      -
+        handle: template
+        field:
+          hide_partials: true
+          type: template
+          localizable: false
+          listable: hidden
+          display: Template
+  sidebar:
+    display: Sidebar
+    fields:
+      -
+        import: seo
