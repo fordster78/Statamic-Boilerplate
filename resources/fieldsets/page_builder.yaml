@@ -23,3 +23,8 @@ fields:
               localizable: false
               listable: hidden
               display: Section
+      content:
+        display: Content
+        fields:
+          -
+            import: content
