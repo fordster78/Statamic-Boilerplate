@@ -1,0 +1,13 @@
+title: Button
+fields:
+  text:
+    input_type: text
+    type: text
+    localizable: false
+    listable: hidden
+    display: Text
+  link:
+    type: link
+    localizable: false
+    listable: hidden
+    display: Link

@@ -23,7 +23,7 @@ h6 {
 }
 
 p {
-    @apply .text-base .text-center;
+    @apply .py-2 .text-base .text-center;
 
     @screen lg {
         @apply .text-left;

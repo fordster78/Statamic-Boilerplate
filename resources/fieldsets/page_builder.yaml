@@ -6,3 +6,9 @@ fields:
     listable: hidden
     display: Builder
     sets:
+      header:
+        display: Header
+        fields:
+          -
+            import: header_block
+            prefix: header_

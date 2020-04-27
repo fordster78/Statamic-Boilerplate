@@ -1,0 +1,49 @@
+title: 'Header Block'
+fields:
+  title:
+    input_type: text
+    type: text
+    localizable: false
+    listable: hidden
+    display: Heading
+  content:
+    restrict: false
+    automatic_line_breaks: true
+    automatic_links: false
+    escape_markup: false
+    smartypants: false
+    type: markdown
+    localizable: false
+    listable: hidden
+    display: Content
+  has_icons:
+    type: toggle
+    localizable: false
+    listable: hidden
+    display: 'Has Icons'
+  icons:
+    mode: grid
+    restrict: false
+    allow_uploads: true
+    type: assets
+    localizable: false
+    listable: hidden
+    display: Icons
+  has_buttons:
+    type: toggle
+    localizable: false
+    listable: hidden
+    display: 'Has Buttons'
+  buttons:
+    mode: table
+    reorderable: true
+    type: grid
+    localizable: false
+    listable: hidden
+    display: Buttons
+    fields:
+      -
+        import: button
+        prefix: button_
+    max_rows: 2
+
