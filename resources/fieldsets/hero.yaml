@@ -1,4 +1,4 @@
-title: 'Hero Block'
+title: 'Hero'
 fields:
   heading:
     input_type: text
