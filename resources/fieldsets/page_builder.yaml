@@ -12,3 +12,14 @@ fields:
           -
             import: header_block
             prefix: header_
+      spacer:
+        display: Spacer
+        fields:
+          -
+            handle: section
+            field:
+              type: section
+              instructions: 'This will add a Horizontal rule to the page.'
+              localizable: false
+              listable: hidden
+              display: Section
