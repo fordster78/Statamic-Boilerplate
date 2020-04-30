@@ -7,11 +7,11 @@ h2 {
 }
 
 h3 {
-    @apply .pb-4 .text-3xl .text-blue-600;
+    @apply .pb-4 .text-3xl .text-blue-600 .font-semibold;
 }
 
 h4 {
-    @apply .pb-4 .text-2xl .text-blue-600;
+    @apply .pb-4 .text-2xl .text-blue-600 .font-medium;
 }
 
 h5 {
