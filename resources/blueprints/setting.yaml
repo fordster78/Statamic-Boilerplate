@@ -41,3 +41,11 @@ sections:
           instructions: 'This will default to the Company Name when blank.'
           if:
             show_menu_header: 'equals true'
+      -
+        handle: show_scroll_to_top
+        field:
+          type: toggle
+          localizable: false
+          listable: hidden
+          display: 'Show Scroll To Top'
+          width: 50
