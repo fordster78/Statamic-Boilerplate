@@ -1,7 +1,7 @@
 <template>
     <div class="w-full h-full">
         <transition name="overlay">
-            <div class="w-full h-full bg-overlay-7 z-10 fixed top-0 right-0" v-show="show" @click="$emit('close')">
+            <div class="w-full h-full bg-overlay z-10 fixed top-0 right-0" v-show="show" @click="$emit('close')">
                 <transition name="slide">
                     <div class="h-full w-5/6 xs:w-3/4 bg-gray-50 border-t-4 border-blue-700 z-10 fixed top-0 right-0" v-if="show" @click.stop>
                         <div class="p-4 flex justify-between items-center">
