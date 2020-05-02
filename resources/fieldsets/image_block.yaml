@@ -1,0 +1,29 @@
+title: 'Image Block'
+fields:
+  -
+    handle: image
+    field:
+      mode: grid
+      container: assets
+      restrict: false
+      allow_uploads: true
+      max_files: 1
+      type: assets
+      localizable: false
+      listable: hidden
+      display: Image
+  -
+    handle: text
+    field:
+      type: textarea
+      localizable: false
+      listable: hidden
+      display: Text
+  -
+    handle: overlap
+    field:
+      type: toggle
+      localizable: false
+      listable: hidden
+      display: Overlap
+      instructions: 'Push the image up so it overlaps the block above it. This will only affect desktop devices.'

@@ -36,3 +36,8 @@ fields:
             -
               import: feature_block
               prefix: featured_
+        image:
+          display: Image
+          fields:
+            -
+              import: image_block
