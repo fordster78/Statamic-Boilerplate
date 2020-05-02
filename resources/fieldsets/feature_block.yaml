@@ -1,0 +1,28 @@
+title: 'Feature Block'
+fields:
+  heading:
+    input_type: text
+    type: text
+    localizable: false
+    listable: hidden
+    display: Heading
+  description:
+    type: textarea
+    localizable: false
+    listable: hidden
+    display: Description
+  features:
+    mode: table
+    max_rows: 4
+    min_rows: 1
+    add_row: 'Add Feature'
+    reorderable: true
+    type: grid
+    localizable: false
+    listable: hidden
+    display: Features
+    fields:
+      -
+        import: feature
+        prefix: feature_
+

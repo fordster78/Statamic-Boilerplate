@@ -1,0 +1,45 @@
+<section>
+    <div class="py-12">
+        <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:text-center">
+                {{ if featured_heading }}
+                    <h3 class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10">
+                        {{ featured_heading }}
+                    </h3>
+                {{ /if }}
+
+                {{ if featured_description }}
+                    <p class="mt-4 max-w-2xl text-xl leading-7 text-gray-500 lg:mx-auto">
+                        {{ featured_description }}
+                    </p>
+                {{ /if }}
+            </div>
+
+            <div class="mt-10">
+                <ul class="md:grid md:grid-cols-2 md:col-gap-8 md:row-gap-10">
+                    {{ featured_features }}
+                        <li class="mt-10 md:mt-0">
+                            <div class="flex">
+                                <div class="flex-shrink-0">
+                                    {{ if feature_icon }}
+                                        <div class="flex items-center justify-center h-12 w-12 rounded-md bg-blue-700 text-white">
+                                            {{ feature_icon }}
+                                        </div>
+                                    {{ /if }}
+                                </div>
+                                <div class="ml-4">
+                                    <h5 class="pb-2 text-lg leading-6 font-medium text-gray-900">
+                                        {{ feature_title }}
+                                    </h5>
+                                    <p class="mt-2 p-0 text-base leading-6 text-gray-500 text-left">
+                                        {{ feature_description }}
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                    {{ /featured_features }}
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
