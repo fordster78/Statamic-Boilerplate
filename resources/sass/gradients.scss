@@ -1,0 +1,7 @@
+@responsive {
+    .bg-gradient-brand {
+        // background-image: linear-gradient(-280deg,#ff4646,#a832d7);
+        background-image: linear-gradient(theme('colors.blue.600'), theme('colors.blue.700'));
+        overflow: hidden;
+    }
+  }

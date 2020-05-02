@@ -1,8 +1,9 @@
 module.exports = {
   theme: {
     extend: {
-        screens: {
-            xs: '400px',
+
+        backgroundColor: {
+            'overlay': 'rgba(75, 85, 105, 0.7)'
         },
         colors: {
             blue: {
@@ -10,14 +11,32 @@ module.exports = {
                 700: '#016DA3'
             },
         },
+        fontFamily: {
+            handwritten: [
+              'marydale',
+              'sans-serif',
+            ],
+        },
+        maxWidth: {
+            '6xl': '70rem',
+        },
+        screens: {
+            xs: '400px',
+        },
         spacing: {
+            '25': '6.25rem',
+            '49': '12.25rem',
+            '50': '12.5rem',
             '68': '16.88rem',
             '72': '17.5rem',
             '76': '18.13rem',
             '80': '18.75rem'
         },
-        backgroundColor: {
-            'overlay': 'rgba(75, 85, 105, 0.7)'
+        opacity: {
+            '40': '0.4',
+        },
+        zIndex: {
+            '2': '2',
         },
     },
   },
