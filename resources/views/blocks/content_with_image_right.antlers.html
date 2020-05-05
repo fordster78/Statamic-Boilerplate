@@ -1,0 +1,23 @@
+<section class="py-12 px-4">
+    <div class="max-w-5xl mx-auto flex flex-col lg:flex-row items-center justify-between">
+        <div class="max-w-lg">
+            <h3 class="text-2xl text-center lg:text-left">
+                {{ heading }}
+            </h3>
+            <p>{{ content }}</p>
+            {{ if link }}
+            <p class="mb-4 md:m-0">
+                <a href="{{ link }}" class="text-sm font-bold uppercase relative hover:text-blue-700">
+                    {{ text }}
+                </a>
+            </p>
+            {{ /if }}
+        </div>
+        <div class="max-w-full">
+            {{ image }}
+                <img src="{{ url }}" width="400"
+                    alt="{{ alt }}" class="origin-center transform lg:rotate-3 shadow-br rounded">
+            {{ /image }}
+        </div>
+    </div>
+</section>

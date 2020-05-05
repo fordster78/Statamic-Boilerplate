@@ -41,3 +41,18 @@ fields:
           fields:
             -
               import: image_block
+        content_with_image_left:
+          display: 'Content With Image Left'
+          fields:
+            -
+              import: content_with_image
+        content_with_image_right:
+          display: 'Content With Image Right'
+          fields:
+            -
+              import: content_with_image
+        call_to_action:
+          display: 'Call To Action'
+          fields:
+            -
+              import: call_to_action

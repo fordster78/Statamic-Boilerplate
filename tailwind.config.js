@@ -18,7 +18,20 @@ module.exports = {
             ],
         },
         maxWidth: {
+            '5xl': '61.25rem',
             '6xl': '70rem',
+        },
+        rotate: {
+            '-5': '-5deg',
+            '-4': '-4deg',
+            '-3': '-3deg',
+            '-2': '-2deg',
+            '-1': '-1deg',
+            '1': '1deg',
+            '2': '3deg',
+            '3': '3deg',
+            '4': '3deg',
+            '5': '3deg',
         },
         screens: {
             xs: '400px',
@@ -41,9 +54,11 @@ module.exports = {
     },
   },
   variants: {
-    textColor: ['responsive', 'hover', 'focus', 'last'],
-    margin: ['responsive', 'first', 'last'],
     display: ['responsive', 'last'],
+    flexDirection: ['responsive', 'odd', 'even'],
+    margin: ['responsive', 'first', 'last'],
+    rotate: ['responsive', 'hover', 'focus', 'odd', 'even'],
+    textColor: ['responsive', 'hover', 'focus', 'last'],
   },
   plugins: [
       require('@tailwindcss/ui'),

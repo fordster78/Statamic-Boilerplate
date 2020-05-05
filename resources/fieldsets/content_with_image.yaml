@@ -1,0 +1,45 @@
+title: 'Content with Image'
+fields:
+  -
+    handle: image
+    field:
+      mode: grid
+      restrict: false
+      allow_uploads: true
+      max_files: 1
+      type: assets
+      localizable: false
+      listable: hidden
+      display: Image
+  -
+    handle: heading
+    field:
+      input_type: text
+      type: text
+      localizable: false
+      listable: hidden
+      display: Heading
+  -
+    handle: content
+    field:
+      type: textarea
+      localizable: false
+      listable: hidden
+      display: Content
+  -
+    handle: link
+    field:
+      type: link
+      localizable: false
+      width: 50
+      listable: hidden
+      display: Link
+  -
+    handle: text
+    field:
+      input_type: text
+      type: text
+      localizable: false
+      width: 50
+      listable: hidden
+      display: Text
